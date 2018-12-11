@@ -1,6 +1,6 @@
 #include <ESP8266WiFi.h>
  
-// Membuat network
+// mencari wifi dengan ssid dan pass berikut
 char ssid[] = "WIFI_TIDAK";       //  your network SSID (name)
 char pass[] = "bapau123";    // your network password
  
@@ -23,7 +23,7 @@ void setup()
       Serial.println(F("Serial started at 9600"));
       Serial.println();
  
-      // We start by connecting to a WiFi network
+      // menghubungkan nodemcu dengan wifi
       Serial.print(F("Connecting to "));  Serial.println(ssid);
       WiFi.begin(ssid, pass);
  
